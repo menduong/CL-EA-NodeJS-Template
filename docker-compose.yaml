@@ -1,0 +1,8 @@
+version: '3'
+services:
+  external-adapter:
+    image: external-adapter:latest
+    container_name: external-adapter
+    build: .
+    ports:
+      - "8080:8080"
